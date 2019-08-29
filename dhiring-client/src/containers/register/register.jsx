@@ -12,11 +12,33 @@
  * Register router component                                                  * 
  */
 import React, { Component } from 'react';
+import { NavBar,WingBlank, List, InputItem, WhiteSpace, Radio, Button } from 'antd-mobile';
+import Logo from '../../components/logo/logo';
+
+const ListItem = List.Item;
+
 
 export default class Register extends Component {
     render() {
         return (
-            <div>Register</div>
+            <div>
+                <NavBar>DHiring</NavBar>
+                <Logo />
+                <WingBlank>
+                    <List>
+                        <InputItem>Username:</InputItem>
+                        <InputItem type="password">Password:</InputItem>
+                        <InputItem type="password">Confirm:</InputItem>
+                        <ListItem>
+                            <span>User Type:</span>
+                            <Radio>Hunter</Radio>
+                            <Radio>Boss</Radio>
+                        </ListItem>
+                        <Button type="primary">Register</Button>
+                        <Button>Login</Button>
+                    </List>
+                </WingBlank>
+            </div>
         )
     }
 }

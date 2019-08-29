@@ -14,7 +14,6 @@
 import React, { Component } from 'react';
 import { NavBar,WingBlank, List, InputItem, WhiteSpace, Radio, Button } from 'antd-mobile';
 import Logo from '../../components/logo/logo';
-import { register } from '../../redux/actions';
 
 const ListItem = List.Item;
 
@@ -45,20 +44,22 @@ export default class Register extends Component {
     };
 
     render() {
-        const {type} = this.state;
+        const { type } = this.state;
         return (
             <div>
                 <NavBar>DHiring</NavBar>
                 <Logo />
                 <WingBlank>
                     <List>
-                        <InputItem onChange={val => {this.handleChange('username', val)}}>Username:</InputItem>
-                        <InputItem type="password" onChange={val => {this.handleChange('password', val)}}>Password:</InputItem>
-                        <InputItem type="password" onChange={val => {this.handleChange('confirmp', val)}}>Confirm:</InputItem>
+                        <InputItem placeholder='Please input username' onChange={val => {this.handleChange('username', val)}}>Username:</InputItem>
+                        <InputItem placeholder='Please enter your password' type="password" onChange={val => {this.handleChange('password', val)}}>Password:</InputItem>
+                        <InputItem placeholder='Please confirm password' type="password" onChange={val => {this.handleChange('confirmp', val)}}>Confirm:</InputItem>
                         <ListItem>
                             <span>User Type:</span>
-                            <Radio chekced={type === 'hunter'} onChange={() => this.handleChange('type', 'hunter')}>Hunter</Radio>
-                            <Radio chekced={type === 'boss'} onClick={() => this.handleChange('type', 'boss')}>Boss</Radio>
+                            &nbsp;&nbsp;&nbsp;
+                            <Radio checked={type==='hunter'} onChange={() => this.handleChange('type', 'hunter')}>Hunter</Radio>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <Radio checked={type==='boss'}  onClick={() => this.handleChange('type', 'boss')}>Boss</Radio>
                         </ListItem>
                         <Button type="primary" onClick={this.register}>Register</Button>
                         <Button onClick={this.toLogin}>Login</Button>

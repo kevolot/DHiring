@@ -12,11 +12,49 @@
  * Login router component                                                     * 
  */
 import React, { Component } from 'react';
+import { NavBar,WingBlank, List, InputItem, WhiteSpace, Button } from 'antd-mobile';
+import Logo from '../../components/logo/logo';
+
+const ListItem = List.Item;
+
 
 export default class Login extends Component {
+    state = {
+        username:'',
+        password:'',
+    };
+
+    login = () => {
+        console.log(this.state);
+    };
+
+    // process change of input date, update relative state
+    handleChange = (name, val) => {
+
+        // update state
+        this.setState({
+            [name]: val
+        })
+    };
+
+    toRegister = () => {
+        this.props.history.replace('/register');
+    };
+
     render() {
         return (
-            <div>Login</div>
+            <div>
+                <NavBar>DHiring</NavBar>
+                <Logo />
+                <WingBlank>
+                    <List>
+                        <InputItem placeholder='Please input username' onChange={val => {this.handleChange('username', val)}}>Username:</InputItem>
+                        <InputItem placeholder='Please enter your password' type="password" onChange={val => {this.handleChange('password', val)}}>Password:</InputItem>
+                        <Button type="primary" onClick={this.login}>Login</Button>
+                        <Button onClick={this.toRegister}>Sign Up</Button>
+                    </List>
+                </WingBlank>
+            </div>
         )
     }
 }

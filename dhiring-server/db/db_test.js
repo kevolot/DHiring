@@ -55,9 +55,9 @@ const UserModel = mongoose.model('user', userSchema);
 function testSave() {
     // user data object
     const user = {
-        username: 'markz',
-        password: md5('1234'),
-        type: 'hunter'
+        username: 'billg',
+        password: md5('2345'),
+        type: 'boss'
     };
     const userModel = new UserModel(user);
     // save to database
@@ -65,11 +65,31 @@ function testSave() {
         console.log('save', err, user);
     });
 }
+// testSave();
 
 // 3.2 Using find()/findOne() to find one or more data entries
 function testFind() {
     // find multiple
     UserModel.find(function (err, users) {
         console.log('find()', err, users);
+    });
+
+    // find one
+    UserModel.findOne({_id: '5d685e6991f8b6b75c07b358'}, function (err, user) {
+        console.log('findOne()', err, user);
+    });
+}
+
+// 3.3 Using findByIdAndUpdate() to update specific data
+function testUpdate() {
+    UserModel.findByIdAndUpdate({_id: '5d685e6991f8b6b75c07b358'}, {username: 'yunm'}, function (err, user) {
+        console.log('findByIdAndUpdate()', err, user);
+    });
+}
+
+// 3.4 Using remove() to delete specific data
+function testDelete() {
+    UserModel.remove({_id: '5d685e6991f8b6b75c07b358'}, function(err, result){
+        console.log('remove()', err, result);
     });
 }

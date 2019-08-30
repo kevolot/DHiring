@@ -2,42 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b9031e4-b4b1-4085-957d-f9fb43b7a3cc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/mongoSettings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/db_test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/nodemon/bin/nodemon.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/nodemon/bin/postinstall.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/nodemon/commitlint.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/cli/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/cli/parse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/config/command.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/config/defaults.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/config/exec.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/config/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/config/load.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/help/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/monitor/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/monitor/match.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/monitor/run.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/monitor/signals.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/monitor/watch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/nodemon.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/rules/add.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/rules/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/rules/parse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/spawn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/utils/bus.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/utils/clone.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/utils/colour.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/utils/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/utils/log.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/utils/merge.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/version.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/nodemon/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/models.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/db_test.js" beforeDir="false" afterPath="$PROJECT_DIR$/db/db_test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +42,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.mongoOptions" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -99,7 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1567050858934</updated>
       <workItem from="1567050867564" duration="5644000" />
-      <workItem from="1567119737850" duration="808000" />
+      <workItem from="1567119737850" duration="4324000" />
     </task>
     <servers />
   </component>

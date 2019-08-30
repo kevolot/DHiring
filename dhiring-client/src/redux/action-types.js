@@ -11,3 +11,5 @@
  * ------------------------------------                                       * 
  * Contain several consts of action types                                     * 
  */
+export const AUTH_SUCCESS = 'auth_success'; // login/register succeed
+export const ERROR_MSG = 'error_msg'; // error message

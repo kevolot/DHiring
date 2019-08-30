@@ -13,17 +13,22 @@
  * take in old state and specific action, return a new state                  *
  */
 import { combineReducers } from 'redux';
-function xxx(state=0, action) {
 
-    return state;
-};
+const initUser = {
+    username: '',
+    type:'', // hunter or boss
+    msg:'' // error message
+}
 
-function yyy(state=0, action) {
+// reducer to produce user state
+function user(state=initUser, action) {
+    switch(action.type) {
 
-    return state;
-};
+        default:
+            return state;
+    }
+}
 
 export default combineReducers({
-    xxx,
-    yyy
+    
 });  // structure of exposed state: {xxx:0, yyy:0}

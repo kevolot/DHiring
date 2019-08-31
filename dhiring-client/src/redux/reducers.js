@@ -14,6 +14,8 @@
  */
 import { combineReducers } from 'redux';
 
+import { AUTH_SUCCESS, ERROR_MSG } from './action-types';
+
 const initUser = {
     username: '',
     type:'', // hunter or boss
@@ -23,7 +25,10 @@ const initUser = {
 // reducer to produce user state
 function user(state=initUser, action) {
     switch(action.type) {
-
+        case AUTH_SUCCESS: // data: user
+            return {...state, ...action.data};
+        case ERROR_MSG: // data: message
+            return {...state, msg: action.data};
         default:
             return state;
     }

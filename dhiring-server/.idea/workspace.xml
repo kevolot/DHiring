@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b9031e4-b4b1-4085-957d-f9fb43b7a3cc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../dhiring-client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../dhiring-client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dhiring-client/src/containers/register/register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../dhiring-client/src/containers/register/register.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dhiring-client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../dhiring-client/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dhiring-client/src/redux/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/../dhiring-client/src/redux/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dhiring-client/src/redux/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/../dhiring-client/src/redux/reducers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,6 +71,13 @@
       <updated>1567050858934</updated>
       <workItem from="1567050867564" duration="5644000" />
       <workItem from="1567119737850" duration="6760000" />
+      <workItem from="1567246524985" duration="793000" />
+      <workItem from="1567475979563" duration="342000" />
+      <workItem from="1567635138212" duration="408000" />
+      <workItem from="1568461623585" duration="648000" />
+      <workItem from="1568721011024" duration="179000" />
+      <workItem from="1569934677537" duration="2994000" />
+      <workItem from="1570103578945" duration="39000" />
     </task>
     <servers />
   </component>

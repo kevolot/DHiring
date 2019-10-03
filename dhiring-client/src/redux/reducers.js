@@ -35,5 +35,5 @@ function user(state=initUser, action) {
 }
 
 export default combineReducers({
-    
+    user
 });  // structure of exposed state: {xxx:0, yyy:0}

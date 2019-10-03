@@ -20,8 +20,16 @@ const authSuccess = (user) => ({type: AUTH_SUCCESS, data: user});
 const errorMessage = (msg) => ({type: ERROR_MSG, data: msg});
 
 // register async action
- export const register = () => {
-     return async dispatch => {
+ export const register = (user) => {
+    const { username, password, confirmp, type } = user;
+    // inspect frontend form, if doesn't pass, return a sync action with errorMessage
+    if(!username){
+        return errorMessage('Username should be input!');
+    } else if (password !== confirmp){
+        return errorMessage('Password doesn\'t match');
+    }
+    // form data is legal, return a async action to send ajax request
+    return async dispatch => {
         // send register async ajax request
         const response = await reqRegister(user);
         const result = response.data;
@@ -32,21 +40,28 @@ const errorMessage = (msg) => ({type: ERROR_MSG, data: msg});
             // dispatch error message
             dispatch(errorMessage(result.msg));
         }
-     }
+    }
  }
 
  // login async action
- export const login = () => {
+ export const login = (user) => {
+    const { username, password } = user;
+    // inspect frontend form, if doesn't pass, return a sync action with errorMessage
+    if(!username){
+        return errorMessage('Username should be input!');
+    } else if (!password){
+        return errorMessage('Please input password!');
+    }
     return async dispatch => {
-       // send login async ajax request
-       const response = await reqLogin(user);
-       const result = response.data;
-       if (result.code===0) { // succeed
-        // dispatch successful action
-        dispatch(authSuccess(result.data));
-    } else { // fail
+        // send login async ajax request
+        const response = await reqLogin(user);
+        const result = response.data;
+        if (result.code===0) { // succeed
+            // dispatch successful action
+            dispatch(authSuccess(result.data));
+        } else { // fail
         // dispatch error message
         dispatch(errorMessage(result.msg));
-    }
+        }
     }
 }

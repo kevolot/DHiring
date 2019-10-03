@@ -13,21 +13,25 @@
  */
 import React, { Component } from 'react';
 import { NavBar,WingBlank, List, InputItem, WhiteSpace, Radio, Button } from 'antd-mobile';
+import { connect } from 'react-redux';
+
+import { register } from '../../redux/actions';
 import Logo from '../../components/logo/logo';
 
 const ListItem = List.Item;
 
 
-export default class Register extends Component {
+class Register extends Component {
     state = {
         username:'',
         password:'',
         confirmp:'',
-        type:'hunter', //Hunter or Boss
+        type:'hunter', //hunter or boss
     };
 
     register = () => {
-        console.log(this.state);
+        // console.log(this.state);
+        this.props.register(this.state);
     };
 
     // process change of input date, update relative state
@@ -45,12 +49,14 @@ export default class Register extends Component {
 
     render() {
         const { type } = this.state;
+        const { msg } = this.state.user;
         return (
             <div>
                 <NavBar>DHiring</NavBar>
                 <Logo />
                 <WingBlank>
                     <List>
+                        { msg ? <div className='error-msg'>{ msg }</div> : null }
                         <InputItem placeholder='Please input username' onChange={val => {this.handleChange('username', val)}}>Username:</InputItem>
                         <InputItem placeholder='Please enter your password' type="password" onChange={val => {this.handleChange('password', val)}}>Password:</InputItem>
                         <InputItem placeholder='Please confirm password' type="password" onChange={val => {this.handleChange('confirmp', val)}}>Confirm:</InputItem>
@@ -69,3 +75,8 @@ export default class Register extends Component {
         )
     }
 }
+
+export default connect(
+    state => ({ user: state.user }),
+    { register }
+)(Register);

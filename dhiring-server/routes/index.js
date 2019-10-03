@@ -44,6 +44,6 @@ router.post('/login', function (req, res) {
       res.send({code: 1, msg: 'username or password are not correct!'});
     }
   })
-})
+});
 
 module.exports = router;
